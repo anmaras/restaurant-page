@@ -1,7 +1,12 @@
+:root {
+  --text-clr: #254653;
+  --button-bg-clr: #f3a161;
+  --button-bg-hover-clr: #f0d876;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 html {
@@ -19,7 +24,6 @@ body {
 }
 
 #header {
-  background-color: brown;
 }
 
 #main {
