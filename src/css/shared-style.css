@@ -10,10 +10,23 @@ html {
 
 body {
   font-size: 1.8rem;
-  min-height: 100vh;
 }
 
 #content {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+#header {
+  background-color: brown;
+}
+
+#main {
+  flex: 1;
+  background-color: cadetblue;
+}
+
+#footer {
+  background-color: rgb(220, 189, 108);
 }
