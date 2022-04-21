@@ -7,10 +7,10 @@ function navContainer() {
   nav.className = "nav-container";
 
   nav.append(
-    elementCreator("div", "nav-div", "Home"),
-    elementCreator("div", "nav-div", "Menu"),
-    elementCreator("div", "nav-div", "About"),
-    elementCreator("div", "nav-btn", "Order Online")
+    elementCreator("div", "nav-div", "HOME"),
+    elementCreator("div", "nav-div", "MENU"),
+    elementCreator("div", "nav-div", "ABOUT"),
+    elementCreator("div", "nav-btn", "ORDER ONLINE")
   );
   const buttons = nav.childNodes;
 
