@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "SemiCondW05-Black";
+  src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SemiCond-Thin";
+  src: url("/src/fonts/SemiCond-Thin.woff2") format("woff2");
+  src: url("/src/fonts/SemiCond-Thin.woff") format("woff");
+  font-weight: 900;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 1.8rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-btn,
+.nav-div {
+  font-family: "SemiCondW05-Black";
+  color: var(--text-clr);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.nav-div {
+  position: relative;
+}
+
+/* Underline Animation  */
+.nav-div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--button-bg-clr);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 0.25s ease-in-out;
+}
+
+.nav-div:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-btn {
+  justify-self: end;
+  padding: 0.5rem 2.4rem;
+  border: 3px solid var(--text-clr);
+  background-color: var(--button-bg-clr);
+  border-radius: 8px;
+}
+
+.nav-btn:hover {
+  transition: 0.2s;
+  background-color: var(--button-bg-hover-clr);
+}
