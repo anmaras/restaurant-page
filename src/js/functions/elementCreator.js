@@ -1,10 +1,11 @@
-function elementCreator(tag, classname, textContent = "") {
-  const div = document.createElement(tag);
+function elementCreator(tag, classname, textContent = "", src = "") {
+  const element = document.createElement(tag);
 
-  div.classList.add(classname);
-  div.textContent = textContent;
+  element.classList.add(classname);
+  element.textContent = textContent;
+  element.src = src;
 
-  return div;
+  return element;
 }
 
 export default elementCreator;
