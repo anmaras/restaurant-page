@@ -1,5 +1,5 @@
 import elementCreator from "../functions/elementCreator";
-import replaceChildren from "../functions/replaceChildren";
+import replaceContent from "../functions/replaceContent";
 
 function navContainer() {
   const nav = document.createElement("nav");
@@ -15,7 +15,7 @@ function navContainer() {
   const buttons = nav.childNodes;
 
   buttons.forEach((button) => {
-    button.addEventListener("click", replaceChildren);
+    button.addEventListener("click", replaceContent);
   });
 
   return nav;
