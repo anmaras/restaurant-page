@@ -1,6 +1,7 @@
 import elementCreator from "../functions/elementCreator";
 import date from "../functions/footerDate";
 import github from "/src/icons/github.svg";
+import hyperLinkGithub from "../functions/hyperlinkGitHub";
 
 function footerComponent() {
   const footer = document.createElement("footer");
@@ -11,6 +12,8 @@ function footerComponent() {
   footer.id = "footer";
 
   footer.append(text, dateSpan, iconSpan);
+
+  footer.childNodes[2].addEventListener("click", hyperLinkGithub);
 
   return footer;
 }
