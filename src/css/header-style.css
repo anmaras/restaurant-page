@@ -12,11 +12,18 @@
 
 .nav-container {
   width: 100%;
-  padding: 1.8rem 0rem;
-  display: flex;
+  padding: 1.6rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, max-content);
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  column-gap: 1.6rem;
+}
+
+.nav-icon {
+  max-width: 60px;
+  display: none;
 }
 
 .nav-btn,
@@ -52,7 +59,6 @@
 }
 
 .nav-btn {
-  justify-self: end;
   padding: 0.5rem 2.4rem;
   border: 3px solid var(--text-clr);
   background-color: var(--button-bg-clr);

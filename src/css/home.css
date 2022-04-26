@@ -1,0 +1,16 @@
+.home-container {
+  padding: 0rem 3rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section {
+  height: 100%;
+  background-image: url(/src/imgs/mainbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 35px;
+}

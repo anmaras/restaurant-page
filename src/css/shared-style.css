@@ -2,6 +2,8 @@
   --text-clr: #254653;
   --button-bg-clr: #f3a161;
   --button-bg-hover-clr: #f0d876;
+  --footer-text-clr: #ffffff;
+  --footer-bg-clr: #254653;
 }
 
 * {
@@ -15,22 +17,6 @@ html {
 
 body {
   font-size: 1.8rem;
-}
-
-#content {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-#header {
-}
-
-#main {
-  flex: 1;
-  background-color: cadetblue;
-}
-
-#footer {
-  background-color: rgb(220, 189, 108);
 }
