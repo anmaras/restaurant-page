@@ -1,5 +1,6 @@
 import elementCreator from "../functions/elementCreator";
 import replaceContent from "../functions/replaceContent";
+import discoCheetah from "/home/antonis/the_odin_project/restaurant-page/src/imgs/discoCheetah.png";
 
 function navContainer() {
   const nav = document.createElement("nav");
@@ -7,6 +8,7 @@ function navContainer() {
   nav.className = "nav-container";
 
   nav.append(
+    elementCreator("img", "nav-icon", "", discoCheetah),
     elementCreator("div", "nav-div", "HOME"),
     elementCreator("div", "nav-div", "MENU"),
     elementCreator("div", "nav-div", "ABOUT"),
