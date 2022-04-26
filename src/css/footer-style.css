@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "SemiCondW05-Black";
+  src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: var(--footer-bg-clr);
+}
+
+.footer-text,
+.footer-date {
+  color: var(--footer-text-clr);
+  font-family: "SemiCondW05-Black";
+  letter-spacing: 0.5rem;
+}
+
+.footer-icon {
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
