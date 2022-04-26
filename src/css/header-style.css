@@ -8,7 +8,6 @@
   font-family: "SemiCond-Thin";
   src: url("/src/fonts/SemiCond-Thin.woff2") format("woff2");
   src: url("/src/fonts/SemiCond-Thin.woff") format("woff");
-  font-weight: 900;
 }
 
 .nav-container {
@@ -24,9 +23,10 @@
 .nav-div {
   font-family: "SemiCondW05-Black";
   color: var(--text-clr);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .nav-div {
