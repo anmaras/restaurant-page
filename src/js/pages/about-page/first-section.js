@@ -6,7 +6,7 @@ function firstSection() {
     "section",
     "about-container_first-section"
   );
-  const summerImg = elementCreator("img", "img", "", summer);
+  const summerImg = elementCreator("div", "img", "", "summer");
   const summerImgTitle = elementCreator("h1", "title", "ABOUT US");
 
   firstSection.append(summerImg, summerImgTitle);

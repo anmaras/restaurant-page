@@ -11,7 +11,10 @@ const paraText3 =
   "The four-on-the-floor neighborhood was one on our radar for a brick-and-mortar shop because of the vibe and diversity in Davie Village. Disco Cheetah is the definition of a fast-casual Korean Cuisine that puts our heart and soul into what we cook and what we serve.";
 
 function thirdSection() {
-  const thirdSection = elementCreator("div", "third-section");
+  const thirdSection = elementCreator(
+    "section",
+    "about-container_third-section"
+  );
   const title1 = elementCreator("h3", "title", titleText1);
   const title2 = elementCreator("h3", "title", titleText2);
   const title3 = elementCreator("h3", "title", titleText3);
