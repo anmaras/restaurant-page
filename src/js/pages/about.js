@@ -1,12 +1,16 @@
 import elementCreator from "../functions/elementCreator";
-import firstSection from "./about-page/first-section";
-import secondSection from "./about-page/second-section";
-import thirdSection from "./about-page/third-section";
+import about_firstSection from "./about-page/first-section";
+import about_secondSection from "./about-page/second-section";
+import about_thirdSection from "./about-page/third-section";
 
 function about() {
   const about = elementCreator("div", "about-container");
 
-  about.append(firstSection(), secondSection(), thirdSection());
+  about.append(
+    about_firstSection(),
+    about_secondSection(),
+    about_thirdSection()
+  );
   return about;
 }
 export default about;
