@@ -1,18 +1,28 @@
 @font-face {
+  font-family: "SemiCond-Black";
+  src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+}
+
+@font-face {
   font-family: "Brice-Black";
   src: url("/src/fonts/Brice-Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "SemiCond-Demi";
+  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype");
+}
 
 .about-container {
-  overflow: scroll;
   background-color: var(--main-bg-color);
 
   padding: 0rem 3.4rem;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: minmax(auto, calc(100vh - 115px)) 1fr 1fr;
+  grid-template-rows: minmax(auto, calc(100vh - 14rem)) max-content 1fr;
 }
 
+/* FIRST SECTION */
 .about-container_first-section {
   grid-row: 1/2;
   position: relative;
@@ -31,10 +41,10 @@
 .about-container_first-section .title {
   font-family: "Brice-Black";
   font-size: 10rem;
+  text-shadow: 3px 3px var(--text-clr);
   -webkit-text-fill-color: var(--footer-text-clr);
   -webkit-text-stroke-color: var(--footer-bg-clr);
   -webkit-text-stroke-width: 2px;
-  text-shadow: 3px 3px var(--text-clr);
 
   position: absolute;
   left: 50%;
@@ -44,6 +54,8 @@
   width: max-content;
 }
 
+/* SECOND SECTION */
+
 .about-container_second-section {
   margin-top: 12rem;
   grid-row: 2/3;
@@ -52,14 +64,41 @@
 
 .about-container_second-section h2 {
   font-family: "Brice-Black";
-  font-size: 5rem;
+  font-size: 7rem;
+  color: var(--button-bg-clr);
+  text-shadow: 3px 3px var(--text-clr);
+  -webkit-text-stroke: 2px var(--text-clr);
 }
 
 .about-container_second-section .img {
-  margin-top: 10rem;
+  margin-top: 2rem;
   width: 95%;
 }
 
+/* THIRD SECTION */
+
 .about-container_third-section {
   grid-row: 3/4;
+  width: 40%;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 20rem;
+}
+.about-container_third-section h3 {
+  font-family: "SemiCond-Black";
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--footer-bg-clr);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.about-container_third-section p {
+  text-align: center;
+  font-family: "SemiCond-Demi";
+  color: var(--footer-bg-clr);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 1.6rem 0rem;
 }
