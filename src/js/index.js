@@ -1,6 +1,7 @@
 import "../css/shared-style.css";
 import "../css/header-style.css";
 import "../css/footer-style.css";
+import "../css/about-style.css";
 import "../css/home.css";
 import headerComponent from "./components/header";
 import mainComponent from "./components/main";
