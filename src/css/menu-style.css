@@ -24,12 +24,11 @@
 
 /* FIRST SECTION */
 .menu-container_first-section {
-  grid-row: 1/2;
   position: relative;
 }
 
 .menu-container_first-section .img {
-  border-radius: 50px;
+  border-radius: 25px;
   background-image: url(/src/imgs/table.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,69 +41,167 @@
   font-family: "Brice-Black";
   text-transform: uppercase;
   font-size: 10rem;
+  color: var(--main-bg-color);
   text-shadow: 3px 3px var(--text-clr);
-  -webkit-text-fill-color: var(--footer-text-clr);
-  -webkit-text-stroke-color: var(--footer-bg-clr);
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke: 2px var(--footer-bg-clr);
 
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
-  width: max-content;
 }
 
-/* SECOND SECTION */
+/* btn */
+
+.download-pdf {
+  display: none;
+  font-family: "SemiCondW05-Black";
+  color: var(--text-clr);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  padding: 0.5rem 2.4rem;
+  border: 3px solid var(--text-clr);
+  background-color: var(--button-bg-clr);
+  border-radius: 8px;
+
+  margin-bottom: 3rem;
+}
+
+.download-pdf:hover {
+  transition: 0.2s;
+  background-color: var(--button-bg-hover-clr);
+}
+
+/* Second Section container */
 
 .menu-container_second-section {
-  padding: 2rem;
-  margin-top: 5rem;
-  grid-row: 2/3;
+  width: 70%;
+  margin: 5rem auto;
+  border-radius: 25px;
+  padding: 3rem;
   background-color: var(--menu-section-color);
-}
-.menu-container_second-section .download-pdf {
-}
 
-.menu-container_second-section .menu {
-  background-color: whitesmoke;
+  display: flex;
+  gap: 2rem;
 }
 
-.list-base_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.menu-main {
+  width: 35%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
-  justify-content: center;
-  align-items: center;
-
+.menu-main,
+.menu-sides {
+  border: 8px solid var(--footer-bg-clr);
+  border-radius: 25px;
   background-color: var(--main-bg-color);
-  border: 2px solid black;
 }
 
-.list-base_container .step {
-  grid-column: 1/2;
-  grid-row: 1/2;
+.list-main_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
 
-.list-base_container .title {
+.list-main_container .step,
+.list-main_container .title,
+.list-side_container > p {
+  font-family: "Brice-Black";
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.list-main_container .step {
+  color: var(--button-bg-clr);
+}
+
+.list-main_container .title {
+  color: var(--footer-bg-clr);
+}
+
+/* Icons */
+
+.list-main_container .icon.base {
+  background-image: url(/src/imgs/base.png);
+}
+
+.list-main_container .icon.protein {
+  background-image: url(/src/imgs/protein.png);
+}
+.list-main_container .icon.sauces {
+  background-image: url(/src/imgs/sauce.png);
+}
+
+.list-main_container .icon {
+  justify-self: center;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+/* List item text */
+
+.list-main_container .list {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+}
+.list-item > p:first-child {
+  font-size: 2rem;
+  font-family: "SemiCond-Black";
+  letter-spacing: 1px;
+  color: var(--button-bg-clr);
+  text-transform: uppercase;
+}
+
+.list-item > p,
+.list-item.sauces > p {
+  color: var(--footer-bg-clr);
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.list-item > p {
+  font-family: "SemiCond-Demi";
+}
+
+.list-item.sauces > p {
+  font-family: "SemiCond-Black";
+}
+
+/* Menu Sides */
+
+.menu-sides {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.list-side_container {
+}
+.list-side_container .list .list-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: column;
+}
+
+.list-side_container > p {
+  color: var(--footer-bg-clr);
+}
+
+.list-side_container li > p:nth-child(3) {
   grid-column: 1/2;
   grid-row: 2/3;
-}
-
-.list-base_container .icon {
-  background-image: url(/src/imgs/salad.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  height: 100%;
-
-  grid-column: 2/2;
-  grid-row: 1/2;
-}
-
-.list-base_container .list {
-  grid-column: 1/3;
-  grid-row: 3/4;
 }
