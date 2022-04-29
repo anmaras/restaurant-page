@@ -6,7 +6,7 @@ function mainComponent() {
   const main = document.createElement("main");
   main.id = "main";
 
-  main.append(menu());
+  main.append(home());
 
   return main;
 }
