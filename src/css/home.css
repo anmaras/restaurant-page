@@ -4,7 +4,7 @@
     url("/src/fonts/SemiCondW05-Black.woff") format("woff");
 }
 @font-face {
-  font-family: "Brice-Regular";
+  font-family: "Brice-Expanded";
   src: url("/src/fonts/Brice-RegularExpanded.otf") format("opentype");
 }
 
@@ -25,7 +25,7 @@
   /* height: 100vh; */
   /* will check later if creates issues */
   display: grid;
-  grid-template-rows: minmax(auto, calc(100vh - 19rem)) max-content;
+  grid-template-rows: minmax(auto, calc(100vh - 14rem)) auto auto;
 }
 
 /* Bg Img Potition */
@@ -51,9 +51,8 @@
 .home-container_first-section_title {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  width: 100%;
 }
 
 /* Home Title Style Group h1 and first h2 Styles */
@@ -82,7 +81,7 @@
 /* Home Title Style h2 thrid*/
 .home-container_first-section_title h2:nth-child(3) {
   font-size: 4.7rem;
-  font-family: "Brice-Regular";
+  font-family: "Brice-Expanded";
   -webkit-text-stroke: 1px var(--text-clr);
   color: var(--main-bg-color);
 }
@@ -93,7 +92,6 @@
 
 .home-container_second-section {
   margin: 8rem auto;
-  width: 80%;
   padding: 2rem;
   text-align: center;
 }
@@ -116,5 +114,95 @@
   font-family: "SemiCond-Demi";
   color: var(--footer-bg-clr);
   line-height: 1.5;
-  width: 75%;
+  width: 50%;
+}
+
+/* THIRD SECTION */
+
+/* Third section container  potitioning*/
+.home-third-section_locations {
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 50rem));
+  grid-auto-rows: 700px;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Third section container children position */
+.home-third-section_locations .restaurant,
+.home-third-section_locations .truck {
+  padding: 3.6rem;
+
+  border: 8px solid var(--footer-bg-clr);
+  border-radius: 25px;
+  background-color: var(--default-clr);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Third section container children  icons potition */
+.home-third-section_locations .restaurant .icon,
+.home-third-section_locations .truck .icon {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home-third-section_locations .restaurant .icon {
+  background-image: url(/src/imgs/drawing.svg);
+}
+.home-third-section_locations .truck .icon {
+  background-image: url(/src/imgs/truck.svg);
+}
+
+/* Third section container children  text style */
+.home-third-section_locations .restaurant .title,
+.home-third-section_locations .truck .title {
+  font-family: "Brice-Expanded";
+  font-size: 2.7rem;
+  color: var(--footer-bg-clr);
+  word-break: normal;
+}
+
+.home-third-section_locations .restaurant .hours p,
+.home-third-section_locations .truck .hours p {
+  font-family: "SemiCond-Demi";
+  font-size: 1.8rem;
+  color: var(--footer-bg-clr);
+}
+.home-third-section_locations .restaurant .hours p > span,
+.home-third-section_locations .truck .hours p > span {
+  font-family: "SemiCond-Demi";
+  color: var(--footer-bg-clr);
+  font-size: 1, 6rem;
+  text-transform: capitalize;
+}
+
+/* Third section container children  btn style */
+.home-third-section_locations .restaurant .btn,
+.home-third-section_locations .truck .btn {
+  padding: 0.5rem 2.4rem;
+  width: 50%;
+  min-width: 198px;
+
+  font-family: "SemiCond-Demi";
+  color: var(--footer-bg-clr);
+
+  border: 3px solid var(--text-clr);
+  background-color: var(--button-bg-clr);
+  border-radius: 8px;
+}
+
+.home-third-section_locations .restaurant .btn:hover,
+.home-third-section_locations .truck .btn:hover {
+  transition: 0.2s;
+  background-color: var(--button-bg-hover-clr);
 }
