@@ -79,7 +79,8 @@
 /* Second Section container */
 
 .menu-container_second-section {
-  width: 70%;
+  width: 50%;
+  min-width: min-content;
   margin: 5rem auto;
   border-radius: 25px;
   padding: 3rem;
@@ -87,11 +88,13 @@
 
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
+/* Mains container */
 .menu-main {
-  width: 35%;
-  padding: 5rem;
+  flex: 1;
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -183,14 +186,15 @@
 /* Menu Sides */
 
 .menu-sides {
-  padding: 5rem;
+  flex: 2;
+  min-width: 365px;
+  padding: 2.4rem;
+
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.list-side_container {
-}
 .list-side_container .list .list-item {
   display: grid;
   grid-template-columns: 1fr auto;
