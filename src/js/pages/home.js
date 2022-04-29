@@ -2,7 +2,38 @@ import elementCreator from "../functions/elementCreator";
 import truckLogo from "/src/imgs/truckLogo.png";
 import restauranLogo from "/src/imgs/restaurantLogo.png";
 
-function sectionElement() {
+function firstSection() {
+  const element = elementCreator("section", "home-container_first-section");
+
+  const markup = `<div class="home-container_first-section_title">
+  <h1>DISCO</h1>
+  <h2>CHEETAH</h2>
+  <h2>KOREAN GRILL</h2>
+  </div>`;
+
+  element.insertAdjacentHTML("beforeend", markup);
+  return element;
+}
+
+function secondSection() {
+  const element = elementCreator("section", "home-container_second-section");
+
+  const markup = `<div class="home-second-section_mission">
+  <h1>SERVING REAL FOOD, FAST!</h1>
+      <p>We cook up bright, bold Korean dishes 
+      that are totally unique in Vancouver, 
+      you won’t find our flavors and colors anywhere else. 
+      And we serve it all hot, 
+      fast and in a format that’s affordable and comfortable 
+      for urban Vancouverites to enjoy.</p>
+  </div>`;
+
+  element.insertAdjacentHTML("beforeend", markup);
+
+  return element;
+}
+
+/* function sectionElement() {
   let text = "MONDAY - THURSDAY 11AM – 10PM \n FRIDAY - SUNDAY 11AM - 11PM";
 
   const container = elementCreator("div", "constainer_visit-restaurant");
@@ -21,14 +52,9 @@ function sectionElement() {
 
   container.append(logo, title, hours, address, btn);
   return container;
-}
+} */
 
-function firstSection() {
-  const element = elementCreator("div", "first-section");
-  return element;
-}
-
-function secondSection() {
+/* function secondSection() {
   const element = elementCreator("div", "second-section");
   const h2 = elementCreator(
     "h2",
@@ -44,8 +70,8 @@ function secondSection() {
   element.append(h2, paragraph);
 
   return element;
-}
-
+} */
+/* 
 function thirdSection() {
   const element = elementCreator("div", "third-section");
 
@@ -61,17 +87,11 @@ function fifthSection() {
   const element = elementCreator("div", "fifth-section");
   return element;
 }
-
+ */
 function home() {
   const container = elementCreator("div", "home-container");
 
-  container.append(
-    firstSection(),
-    secondSection(),
-    thirdSection(),
-    fourthSection(),
-    fifthSection()
-  );
+  container.append(firstSection(), secondSection());
 
   return container;
 }
