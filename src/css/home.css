@@ -1,16 +1,119 @@
-.home-container {
-  padding: 0rem 3rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: "SemiCond-Black";
+  src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Brice-Regular";
+  src: url("/src/fonts/Brice-RegularExpanded.otf") format("opentype");
 }
 
-.first-section {
-  height: 100%;
+@font-face {
+  font-family: "Brice-Black";
+  src: url("/src/fonts/Brice-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "SemiCond-Demi";
+  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype");
+}
+
+/* First Section */
+
+.home-container {
+  background-color: var(--main-bg-color);
+  padding: 0rem 3.4rem;
+  /* height: 100vh; */
+  /* will check later if creates issues */
+  display: grid;
+  grid-template-rows: minmax(auto, calc(100vh - 19rem)) max-content;
+}
+
+/* Bg Img Potition */
+.home-container_first-section {
+  /* Relative for the title inside */
+  position: relative;
   background-image: url(/src/imgs/mainbg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 25px;
+}
 
-  border-radius: 35px;
+/* Home Title Potition Inside Img */
+.home-container_first-section div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Main Title Container items potitioning */
+.home-container_first-section_title {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Home Title Style Group h1 and first h2 Styles */
+.home-container_first-section_title:first-child h1,
+.home-container_first-section_title h2:nth-child(2) {
+  font-family: "Brice-Black";
+  color: var(--button-bg-clr);
+  -webkit-text-stroke: 2px var(--text-clr);
+  text-shadow: 5px 5px 1px var(--text-clr);
+}
+
+/* Home Title Style h1*/
+.home-container_first-section_title:first-child h1 {
+  font-size: 15rem;
+  /* fixed heigth because the font bottom margin */
+  height: 130px;
+}
+
+/* Home Title Style h2 second*/
+.home-container_first-section_title h2:nth-child(2) {
+  font-size: 10rem;
+  /* fixed heigth because the font bottom margin */
+  height: 95px;
+}
+
+/* Home Title Style h2 thrid*/
+.home-container_first-section_title h2:nth-child(3) {
+  font-size: 4.7rem;
+  font-family: "Brice-Regular";
+  -webkit-text-stroke: 1px var(--text-clr);
+  color: var(--main-bg-color);
+}
+
+/* SECOND SECTION */
+
+/* Second section container potitioning */
+
+.home-container_second-section {
+  margin: 8rem auto;
+  width: 80%;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Second section mission title  */
+.home-second-section_mission > h1 {
+  margin-bottom: 2.4rem;
+
+  font-family: "Brice-Black";
+  font-size: 5.6rem;
+  color: var(--button-bg-clr);
+  -webkit-text-stroke: 2px var(--text-clr);
+  text-shadow: 2.5px 2.5px var(--text-clr);
+}
+
+.home-second-section_mission > p {
+  margin: auto;
+
+  font-family: "SemiCond-Demi";
+  color: var(--footer-bg-clr);
+  line-height: 1.5;
+  width: 75%;
 }

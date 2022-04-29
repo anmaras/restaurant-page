@@ -13,6 +13,8 @@
   src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype");
 }
 
+/* FIRST SECTION */
+
 .menu-container {
   background-color: var(--main-bg-color);
 
@@ -22,7 +24,6 @@
   grid-template-rows: minmax(auto, calc(100vh - 14rem)) max-content;
 }
 
-/* FIRST SECTION */
 .menu-container_first-section {
   position: relative;
 }
@@ -91,7 +92,7 @@
   flex-wrap: wrap;
 }
 
-/* Mains container */
+/* Second Section Mains container */
 .menu-main {
   flex: 1;
   padding: 2.4rem;
@@ -129,7 +130,7 @@
   color: var(--footer-bg-clr);
 }
 
-/* Icons */
+/* Second Section Icons */
 
 .list-main_container .icon.base {
   background-image: url(/src/imgs/base.png);
@@ -183,7 +184,7 @@
   font-family: "SemiCond-Black";
 }
 
-/* Menu Sides */
+/* Second Section Menu Sides */
 
 .menu-sides {
   flex: 2;
