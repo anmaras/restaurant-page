@@ -11,7 +11,8 @@ function footerComponent() {
     <div class="footer-date">${date()}</div>
   `;
   footer.insertAdjacentHTML("beforeend", markup);
-  footer.childNodes[2].addEventListener("click", hyperLinkGithub);
+  footer.childNodes[3].addEventListener("click", hyperLinkGithub);
+
   return footer;
 }
 export default footerComponent;
