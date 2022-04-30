@@ -1,25 +1,27 @@
 @font-face {
   font-family: "SemiCond-Black";
   src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
-    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff") local(Arial),
+    local(Helvetica);
 }
 
 @font-face {
   font-family: "Brice-Black";
-  src: url("/src/fonts/Brice-Bold.otf") format("opentype");
+  src: url("/src/fonts/Brice-Bold.otf") format("opentype") local(Arial),
+    local(Helvetica);
 }
 @font-face {
   font-family: "SemiCond-Demi";
-  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype");
+  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype") local(Arial),
+    local(Helvetica);
 }
-
+/* About main container */
 .about-container {
   background-color: var(--main-bg-color);
-
   padding: 0rem 3.4rem;
-  min-height: 100vh;
   display: grid;
   grid-template-rows: minmax(auto, calc(100vh - 14rem)) max-content 1fr;
+  row-gap: 8rem;
 }
 
 /* FIRST SECTION */
@@ -57,7 +59,6 @@
 /* SECOND SECTION */
 
 .about-container_second-section {
-  margin-top: 12rem;
   grid-row: 2/3;
   text-align: center;
 }
@@ -71,7 +72,7 @@
 }
 
 .about-container_second-section .img {
-  margin-top: 2rem;
+  margin-top: 8rem;
   width: 95%;
 }
 
@@ -81,8 +82,7 @@
   grid-row: 3/4;
   width: 40%;
   margin: auto;
-  margin-top: 6rem;
-  margin-bottom: 20rem;
+  margin-bottom: 8rem;
 }
 .about-container_third-section h3 {
   font-family: "SemiCond-Black";

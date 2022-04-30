@@ -1,16 +1,19 @@
 @font-face {
   font-family: "SemiCond-Black";
   src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
-    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff") local(Arial),
+    local(Helvetica);
 }
 
 @font-face {
   font-family: "Brice-Black";
-  src: url("/src/fonts/Brice-Bold.otf") format("opentype");
+  src: url("/src/fonts/Brice-Bold.otf") format("opentype") local(Arial),
+    local(Helvetica);
 }
 @font-face {
   font-family: "SemiCond-Demi";
-  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype");
+  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype") local(Arial),
+    local(Helvetica);
 }
 
 /* FIRST SECTION */
@@ -22,6 +25,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-rows: minmax(auto, calc(100vh - 14rem)) max-content;
+  row-gap: 8rem;
 }
 
 .menu-container_first-section {
@@ -52,44 +56,19 @@
   transform: translate(-50%, -50%);
 }
 
-/* btn */
-
-.download-pdf {
-  display: none;
-  font-family: "SemiCondW05-Black";
-  color: var(--text-clr);
-  font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  cursor: pointer;
-  text-transform: uppercase;
-
-  padding: 0.5rem 2.4rem;
-  border: 3px solid var(--text-clr);
-  background-color: var(--button-bg-clr);
-  border-radius: 8px;
-
-  margin-bottom: 3rem;
-}
-
-.download-pdf:hover {
-  transition: 0.2s;
-  background-color: var(--button-bg-hover-clr);
-}
-
 /* Second Section container */
 
 .menu-container_second-section {
-  width: 50%;
-  min-width: min-content;
-  margin: 5rem auto;
+  width: 100%;
   border-radius: 25px;
-  padding: 3rem;
+  padding: 3rem 10%;
+  min-width: fit-content;
   background-color: var(--menu-section-color);
 
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 8rem;
 }
 
 /* Second Section Mains container */

@@ -1,20 +1,24 @@
 @font-face {
   font-family: "SemiCond-Black";
   src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
-    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff"), local(Arial),
+    local(Helvetica);
 }
 @font-face {
   font-family: "Brice-Expanded";
-  src: url("/src/fonts/Brice-RegularExpanded.otf") format("opentype");
+  src: url("/src/fonts/Brice-RegularExpanded.otf") format("opentype"),
+    local(Arial), local(Helvetica);
 }
 
 @font-face {
   font-family: "Brice-Black";
-  src: url("/src/fonts/Brice-Bold.otf") format("opentype");
+  src: url("/src/fonts/Brice-Bold.otf") format("opentype"), local(Arial),
+    local(Helvetica);
 }
 @font-face {
   font-family: "SemiCond-Demi";
-  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype");
+  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype"), local(Arial),
+    local(Helvetica);
 }
 
 /* First Section */
@@ -22,10 +26,9 @@
 .home-container {
   background-color: var(--main-bg-color);
   padding: 0rem 3.4rem;
-  /* height: 100vh; */
-  /* will check later if creates issues */
   display: grid;
   grid-template-rows: minmax(auto, calc(100vh - 14rem)) auto auto;
+  row-gap: 8rem;
 }
 
 /* Bg Img Potition */
@@ -45,14 +48,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-/* Main Title Container items potitioning */
-.home-container_first-section_title {
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
-  justify-content: center;
 }
 
 /* Home Title Style Group h1 and first h2 Styles */
@@ -91,8 +86,6 @@
 /* Second section container potitioning */
 
 .home-container_second-section {
-  margin: 8rem auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -115,13 +108,14 @@
   color: var(--footer-bg-clr);
   line-height: 1.5;
   width: 50%;
+  max-width: 800px;
 }
 
 /* THIRD SECTION */
 
 /* Third section container  potitioning*/
 .home-third-section_locations {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 50rem));
   grid-auto-rows: 700px;

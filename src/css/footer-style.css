@@ -1,7 +1,8 @@
 @font-face {
   font-family: "SemiCondW05-Black";
   src: url("/src/fonts/SemiCondW05-Black.woff2") format("woff2"),
-    url("/src/fonts/SemiCondW05-Black.woff") format("woff");
+    url("/src/fonts/SemiCondW05-Black.woff") format("woff"), local(Arial),
+    local(Helvetica);
 }
 
 #footer {
