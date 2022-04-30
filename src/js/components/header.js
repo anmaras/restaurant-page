@@ -7,10 +7,10 @@ function navContainer() {
   nav.className = "nav-container";
 
   const markup = ` <img src="${discoCheetah}" class="nav-icon" />
-    <div class="nav-div">HOME</div>
-    <div class="nav-div">MENU</div>
-    <div class="nav-div">ABOUT</div>
-    <div class="nav-btn">ORDER ONLINDE</div>  
+    <div class="nav__page-link">HOME</div>
+    <div class="nav__page-link">MENU</div>
+    <div class="nav__page-link">ABOUT</div>
+    <div class="nav-btn">ORDER ONLINE</div>  
    `;
 
   nav.insertAdjacentHTML("beforeend", markup);
