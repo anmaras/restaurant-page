@@ -1,15 +1,12 @@
-import headerComponent from "./components/header";
-import mainComponent from "./components/main";
-import footerComponent from "./components/footer";
+import home from "./pages/home";
 
-function pageLoad() {
-  const element = document.createElement("div");
+function mainComponent() {
+  const main = document.createElement("main");
+  main.id = "main";
 
-  element.id = "content";
+  main.append(home());
 
-  element.append(headerComponent(), mainComponent(), footerComponent());
-
-  return element;
+  return main;
 }
 
-export default pageLoad;
+export default mainComponent;
