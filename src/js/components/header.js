@@ -1,4 +1,3 @@
-import elementCreator from "../functions/elementCreator";
 import replaceContent from "../functions/replaceContent";
 import discoCheetah from "/home/antonis/the_odin_project/restaurant-page/src/imgs/discoCheetah.png";
 
@@ -7,13 +6,15 @@ function navContainer() {
 
   nav.className = "nav-container";
 
-  nav.append(
-    elementCreator("img", "nav-icon", "", discoCheetah),
-    elementCreator("div", "nav-div", "HOME"),
-    elementCreator("div", "nav-div", "MENU"),
-    elementCreator("div", "nav-div", "ABOUT"),
-    elementCreator("div", "nav-btn", "ORDER ONLINE")
-  );
+  const markup = ` <img src="${discoCheetah}" class="nav-icon" />
+    <div class="nav-div">HOME</div>
+    <div class="nav-div">MENU</div>
+    <div class="nav-div">ABOUT</div>
+    <div class="nav-btn">ORDER ONLINDE</div>  
+   `;
+
+  nav.insertAdjacentHTML("beforeend", markup);
+
   const buttons = nav.childNodes;
 
   buttons.forEach((button) => {
