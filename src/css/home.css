@@ -75,8 +75,8 @@
 
 /* Home Title Style h2 thrid*/
 .home-container_first-section_title h2:nth-child(3) {
-  font-size: 4.7rem;
-  font-family: "Brice-Expanded";
+  font-size: 6.6rem;
+  font-family: "Brice-Black";
   -webkit-text-stroke: 1px var(--text-clr);
   color: var(--main-bg-color);
 }
