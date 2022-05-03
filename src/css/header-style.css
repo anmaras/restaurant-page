@@ -5,13 +5,6 @@
     local(Helvetica);
 }
 
-@font-face {
-  font-family: "SemiCond-Thin";
-  src: url("/src/fonts/SemiCond-Thin.woff2") format("woff2");
-  src: url("/src/fonts/SemiCond-Thin.woff") format("woff"), local(Arial),
-    local(Helvetica);
-}
-
 /* Nav Container style */
 .nav-container {
   padding: 2rem;

@@ -5,6 +5,11 @@
     local(Helvetica);
 }
 @font-face {
+  font-family: "SemiCond-Demi";
+  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype"), local(Arial),
+    local(Helvetica);
+}
+@font-face {
   font-family: "Brice-Expanded";
   src: url("/src/fonts/Brice-RegularExpanded.otf") format("opentype"),
     local(Arial), local(Helvetica);
@@ -13,11 +18,6 @@
 @font-face {
   font-family: "Brice-Black";
   src: url("/src/fonts/Brice-Bold.otf") format("opentype"), local(Arial),
-    local(Helvetica);
-}
-@font-face {
-  font-family: "SemiCond-Demi";
-  src: url("/src/fonts/SemiCond-Demi.ttf") format("opentype"), local(Arial),
     local(Helvetica);
 }
 
