@@ -34,13 +34,13 @@ function about() {
   about.className = "about-container";
 
   const markup = ` <section class="about-container_first-section">
-      <div class="img">summer</div>
+      <div class="img"></div>
       <h1 class="title">ABOUT US</h1>
     </section>
 
     <section class="about-container_second-section">
       <h2 class="title">OUR STORY</h2>
-      <img src="${timeline}" alt="test" class="img" />
+      <img src="${timeline}" alt="summer image" class="img" />
     </section>
     <section class="about-container_third-section">${aboutStoryText()}</section>
 `;
